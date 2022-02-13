@@ -65,14 +65,15 @@ export default function Ranking() {
     },
   ];
 
-  console.log("Ranking:", classement);
+  function timeConverter(d) {
+    let h = Math.floor(d / 3600);
+    let m = Math.floor((d % 3600) / 60);
+    let s = Math.floor((d % 3600) % 60);
 
-  function timeConverter(duration) {
-    var milliseconds = parseInt((duration % 1000) / 100),
-      seconds = Math.floor((duration / 1000) % 60),
-      minutes = Math.floor((duration / (1000 * 60)) % 60);
-
-    return minutes + "min " + seconds + "." + milliseconds + "s";
+    let hDisplay = h > 0 ? h + "h " : "";
+    let mDisplay = m > 0 ? m + "min " : "";
+    let sDisplay = s > 0 ? s + "s" : "";
+    return hDisplay + mDisplay + sDisplay;
   }
 
   return (
