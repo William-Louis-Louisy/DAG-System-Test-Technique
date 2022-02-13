@@ -10,7 +10,7 @@ export default function Layout({ children, pageTitle }) {
       </Head>
 
       <Header />
-      <main className="h-screen">{children}</main>
+      <main className="h-[calc(100%-56px)]">{children}</main>
       <Footer />
     </>
   );

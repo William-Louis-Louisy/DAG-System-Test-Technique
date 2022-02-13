@@ -6,10 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        knicksBlue: "#006BB6",
-        knicksOrange: "#F58426",
-        knicksSilver: "#BEC0C2",
-        knicksBlack: "#000000",
+        dagOrange: "#FF8500",
       },
     },
   },
